@@ -1,0 +1,38 @@
+:host {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing {
+  text-align: center;
+  padding: 2rem;
+}
+
+.headline {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #294B93;
+}
+
+.subtext {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #294B93;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #1d366b;
+}

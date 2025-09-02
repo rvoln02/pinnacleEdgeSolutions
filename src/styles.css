@@ -1,3 +1,13 @@
+/* Universal styling variables */
+:root{ 
+  --nav-h: 100px; /* navbar height */
+  --content-max: 1200px;
+  --pad-y: 32px;
+  --pad-x: 16px;
+}
+
+html { scroll-padding-top: var(--nav-h); scroll-behavior: smooth; }
+
 body{
     background-color: #9b9b9b;
 }

@@ -1,0 +1,64 @@
+:host {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  background-color: #294B93;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Call-to-action box */
+.nav-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.cta-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.cta-contact {
+  font-size: 12px;
+  line-height: 1.2;
+}

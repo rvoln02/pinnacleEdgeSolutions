@@ -1,0 +1,33 @@
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Wrapper for the seven sections */
+.sections {
+  display: block;
+  margin-top: var(--nav-h); /* push below sticky navbar */
+}
+
+.section {
+  width: 100%;
+  min-height: calc(100svh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pad-y) var(--pad-x);
+}
+
+/* Make child component fill available width (same as viewport) */
+.section > * {
+  width: 100%;
+}
+
+/* DEV PURPOSE TEMP BACKGROUNDS */
+.section:nth-of-type(odd)  { background: #d8d8d8; }
+.section:nth-of-type(even) { background: #ffffff; }
